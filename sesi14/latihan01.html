@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery 01</title>
+</head>
+<body>
+
+    <h3>Judul Konten</h3>
+    <p></p>
+    <div id="isikontenid">Isi dari konten ID</div>
+    <div class="isikontencls">Isi dari konten CLASS</div>
+    <br>
+    <div id="isiNama">Nama Saya Marcel</div>
+    <div class="IsiNIM">Dengan NIM 2201010148</div>
+    <i></i>
+
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+
+        //$(document).ready(function() {
+            
+       // });
+
+        $(function() {
+            $("#isikontenid").html("Konten dengan JQuery pada element ID");
+            $(".isikontencls").html("Konten dengan JQuery pada element CLASS");
+            $("h3").html("Latihan JQuery");
+            $("p").html("Isi dari paragraph");
+
+            let tx ="Perkenalkan Nama Saya Maru ";
+            let tx1 = " Nomor Induk Mahasiswa Saya adalah 2201010148 👍"
+            $("#isiNama").html(tx);
+            $(".isiNIM").html(tx1);
+            $("i").html("Hello," +tx+ "Dengan" +tx1);
+        
+        });
+
+        //document.getElementById('isikontenid').innerHTML = '<b>Konten pengganti konten ID</b>';
+        //document.getElementByCLassName("isikontecls")
+    </script>
+    
+
+
+</body>
+</html>
