@@ -67,6 +67,23 @@
             judul = "Judul Luas Segi Tiga";
             $("h3").html(judul);
         });
+
+        $(".cmdLPersegi").click(function(){
+            //get input nilai
+            let P = $(".PJ").val();
+            let L = $(".LB").val();
+            let hasil =P * L;
+            //prosess
+            let LU = P*L;
+            //output
+            let tx = "Hasil:<br>Hitung Luas Persegi dengan nilai panjang "+P+" dan lebar "+L;
+            tx += " adalah:<br>Luas = Panjang X Lebar<br>&nbsp;&nbsp;&nbsp;&nbsp";
+            tx += "= "+P+" X "+L+"<br>&nbsp;&nbsp;&nbsp;&nbsp";
+            tx += "= "+ LU+"<br>Jadi luasnya adalah "+LU;
+
+            $("#hasil").html(tx);
+            $("#hasil").show(1500);
+        });
         
     });
 </script>
